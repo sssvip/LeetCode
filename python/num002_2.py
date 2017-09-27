@@ -45,6 +45,7 @@ class Solution(object):
             current_node = current_node.next
         return head.next
 
+    # just for test
     @classmethod
     def get_num_str_from_node(cls, node):
         """
@@ -58,6 +59,7 @@ class Solution(object):
             node = node.next
         return int("".join(result[::-1]))
 
+    # just for test
     @classmethod
     def construct_nodes(cls, num_str):
         """
