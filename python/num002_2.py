@@ -27,21 +27,18 @@ class Solution(object):
         >>> Solution.get_num_str_from_node(Solution().addTwoNumbers(Solution.construct_nodes("5"), Solution.construct_nodes("5")))
         10
         """
-        head = ListNode(0)
-        current_node = head
+        head = current_node = ListNode(0)
         ten_digit = 0
         while l1 or l2 or ten_digit:
-            num1, num2 = 0, 0
+            temp_sum = ten_digit
             if l1:
-                num1 = l1.val
+                temp_sum += l1.val
                 l1 = l1.next
             if l2:
-                num2 = l2.val
+                temp_sum += l2.val
                 l2 = l2.next
-            temp_sum = num1 + num2 + ten_digit
-            digit = temp_sum % 10
+            digit, ten_digit = temp_sum % 10, temp_sum / 10
             current_node.next = ListNode(digit)
-            ten_digit = temp_sum / 10
             current_node = current_node.next
         return head.next
 
