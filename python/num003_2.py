@@ -26,15 +26,19 @@ class Solution(object):
         3
         >>> print Solution().lengthOfLongestSubstring("abcdd")
         4
+        >>> print Solution().lengthOfLongestSubstring("abba")
+        2
+        >>> print Solution().lengthOfLongestSubstring("abcabcbb")
+        3
         """
         max_length=0
-        pre_substr=""
-        for x in s:
-        	indexof=pre_substr.find(x) # optimizable point (make O(n^2))
-        	if indexof>=0:
-    			pre_substr=pre_substr[indexof+1:]
-    		pre_substr=pre_substr + x
-    		max_length=max(max_length,len(pre_substr))
+        char_last_index={}
+        left_pointer=0
+        for index,x in enumerate(s,1):
+            if char_last_index.get(x,False) is not False:
+                left_pointer=max(char_last_index[x],left_pointer)
+            char_last_index[x]=index
+            max_length=max(max_length,index-left_pointer)
     	return max_length
 
 
