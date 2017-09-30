@@ -20,10 +20,11 @@ class Solution(object):
         >>> Solution().isPalindrome(1233212)
         False
         """
-        return x>=0 and x==int(str(x)[::-1])
+        #return x>=0 and x==int(str(x)[::-1])
+        return str(x)==str(x)[::-1]
 
 
-    
+
     # def isPalindrome(self, x):
     #     """
     #     :type x: int
