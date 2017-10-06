@@ -8,6 +8,7 @@
 | 003        | [Longest Substring Without Repeating Characters][3] | [num003.py](/python/num003.py)     | String      | Medium         | O(n^2)            | O(n)              | 99 ms    | <del>60.17%</del> |
 | 003_2      | [Longest Substring Without Repeating Characters][3] | [num003.py](/python/num003_2.py)   | Hash Table  | Medium         | O(n)              | O(n)              | 92 ms    | 71.48%            |
 | 009        | [Palindrome Number][9]                              | [num009.py](/python/num009.py)     | Math        | Easy           | O(n)              | O(1)              | 188 ms   | 96.53%            |
+| 013        | [Roman to Integer][13]                         | [num013.py](/python/num013.py)     | Hash Table   | Easy           | O(n)            | O(1)              | 118 ms    | 96.06%            |
 | 014        | [Longest Common Prefix][14]                         | [num014.py](/python/num014.py)     | String      | Easy           | O(m*n)            | O(1)              | 38 ms    | 83.59%            |
 
 <!-- | 004        | [Median of Two Sorted Arrays][4]                    | [num004.py](/python/num004.py)     | Binary Search | Hard           | O(n)              | O(n)              | 92 ms    | 71.48%            |
@@ -18,4 +19,5 @@
 [3]: https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 [4]: https://leetcode.com/problems/median-of-two-sorted-arrays/description/
 [9]: https://leetcode.com/problems/palindrome-number/description/
+[13]: https://leetcode.com/problems/roman-to-integer/
 [14]: https://leetcode.com/problems/longest-common-prefix/description/
