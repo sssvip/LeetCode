@@ -17,6 +17,7 @@ Given "bbbbb", the answer is "b", with the length of 1.
 Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 """
 
+
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         """
@@ -27,18 +28,19 @@ class Solution(object):
         >>> print Solution().lengthOfLongestSubstring("abcdd")
         4
         """
-        max_length=0
-        pre_substr=""
+        max_length = 0
+        pre_substr = ""
         for x in s:
-        	indexof=pre_substr.find(x) # optimizable point (make O(n^2))
-        	if indexof>=0:
-    			pre_substr=pre_substr[indexof+1:]
-    		pre_substr=pre_substr + x
-    		max_length=max(max_length,len(pre_substr))
-    	return max_length
+            indexof = pre_substr.find(x)  # optimizable point (make O(n^2))
+            if indexof >= 0:
+                pre_substr = pre_substr[indexof + 1:]
+            pre_substr = pre_substr + x
+            max_length = max(max_length, len(pre_substr))
+        return max_length
 
 
 if __name__ == '__main__':
     import doctest
+
     doctest.testmod(verbose=True)
-	#print Solution().lengthOfLongestSubstring("abcdd")
+    # print Solution().lengthOfLongestSubstring("abcdd")
