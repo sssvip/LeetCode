@@ -47,6 +47,17 @@ class Solution(object):
             pre_num = x
         return total
 
+    def removeDuplicates2(self, nums):
+        # more pretty than removeDuplicates ,but need more memory
+        if not nums:
+            return 0
+        pointer = 0
+        for x in nums[1::]:  # need open an new array
+            if x != nums[pointer]:
+                nums[pointer + 1] = x
+                pointer += 1
+        return pointer + 1
+
 
 if __name__ == '__main__':
     import doctest

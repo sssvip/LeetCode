@@ -12,6 +12,7 @@
 | 014        | [Longest Common Prefix][14]                         | [num014.py](/python/num014.py)     | String      | Easy           | O(m*n)            | O(1)              | 38 ms    | 83.59%            |
 | 021        | [Merge Two Sorted Lists][21]                         | [num021.py](/python/num021.py)     | Linked List      | Easy           | O(m+n)            | O(1)              | 42 ms    | 92.83%            |
 | 026        | [Remove Duplicates from Sorted Array][26]          | [num026.py](/python/num026.py)     | Array      | Easy           | O(n)            | O(1)              | 72 ms    | 94.32%            |
+| 027        | [Remove Element][26]          | [num027.py](/python/num027.py)     | Array      | Easy           | O(n)            | O(1)              | 35 ms    | 90.55%            |
 
 <!-- | 004        | [Median of Two Sorted Arrays][4]                    | [num004.py](/python/num004.py)     | Binary Search | Hard           | O(n)              | O(n)              | 92 ms    | 71.48%            |
 -->
@@ -25,3 +26,4 @@
 [14]: https://leetcode.com/problems/longest-common-prefix/description/
 [21]: https://leetcode.com/problems/merge-two-sorted-lists/description/
 [26]: https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
+[27]: https://leetcode.com/problems/remove-element/description/
