@@ -17,6 +17,7 @@
 | 035_2        | [Search Insert Position][35]          | [num035_2.py](/python/num035_2.py)     | Binary Search      | Easy           | O(log(n))            | O(1)              | 32 ms    | 88.74%            |
 | 058        | [Length of Last Word][58]          | [num058.py](/python/num058.py)     | String      | Easy           | O(n)            | O(1)              | 29 ms    | 93.39%            |
 | 066        | [Plus One][66]          | [num066.py](/python/num066.py)     | Array      | Easy           | O(n)            | O(n)              | 33 ms    | 91.79%            |
+| 067        | [Add Binary][67]          | [num067.py](/python/num067.py)     | String      | Easy           | O(1)            | O(1)              | 35 ms    | 95.69%            |
 
 <!-- | 004        | [Median of Two Sorted Arrays][4]                    | [num004.py](/python/num004.py)     | Binary Search | Hard           | O(n)              | O(n)              | 92 ms    | 71.48%            |
 -->
@@ -34,3 +35,4 @@
 [35]: https://leetcode.com/problems/search-insert-position/description/
 [58]: https://leetcode.com/problems/length-of-last-word/description/
 [66]: https://leetcode.com/problems/plus-one/description/
+[67]: https://leetcode.com/problems/add-binary/description/
