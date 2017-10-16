@@ -19,6 +19,7 @@
 | 066        | [Plus One][66]          | [num066.py](/python/num066.py)     | Array      | Easy           | O(n)            | O(n)              | 33 ms    | 91.79%            |
 | 067        | [Add Binary][67]          | [num067.py](/python/num067.py)     | String      | Easy           | O(1)            | O(1)              | 35 ms    | 95.69%            |
 | 069        | [Sqrt(x)][69]          | [num069.py](/python/num069.py)     | Math      | Easy           | O(1)            | O(1)              | 39 ms    | 91.25%            |
+| 070        | [Climbing Stairs][70]          | [num070.py](/python/num070.py)     | Dynamic-Programming      | Easy           | O(n)            | O(n)              | 29 ms    | 82.36%            |
 
 <!-- | 004        | [Median of Two Sorted Arrays][4]                    | [num004.py](/python/num004.py)     | Binary Search | Hard           | O(n)              | O(n)              | 92 ms    | 71.48%            |
 -->
@@ -38,3 +39,4 @@
 [66]: https://leetcode.com/problems/plus-one/description/
 [67]: https://leetcode.com/problems/add-binary/description/
 [69]: https://leetcode.com/problems/sqrtx/description/
+[70]: https://leetcode.com/problems/climbing-stairs/description/
