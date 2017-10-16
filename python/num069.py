@@ -21,11 +21,20 @@ class Solution(object):
         """
         :type x: int
         :rtype: int
+        >>> Solution().mySqrt(10)
+        3
         >>> Solution().mySqrt(0)
         0
         """
+        # >>>method 1:
         # import math
         # return int(math.sqrt(x))
+        # >>>method 2:
+        # r = x
+        # while r * r > x:
+        #     r = (r + x / r) / 2
+        # return r
+        # >>>method 3:
         return int(x ** 0.5)
 
 
