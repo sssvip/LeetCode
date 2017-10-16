@@ -25,6 +25,14 @@ class Solution(object):
         :rtype: int
         >>> Solution().climbStairs(1)
         1
+        >>> Solution().climbStairs(2)
+        2
+        >>> Solution().climbStairs(3)
+        3
+        >>> Solution().climbStairs(4)
+        5
+        >>> Solution().climbStairs(5)
+        8
         """
         cache = {}
         return self.calc(0, n, cache)
@@ -34,10 +42,11 @@ class Solution(object):
             return 0
         if i == n:
             return 1
-        key = "{}{}".format(i, n)
+        key = "{}->{}".format(i, n)
         if key not in cache:
             result = self.calc(i + 1, n, cache) + self.calc(i + 2, n, cache)
             cache[key] = result
+            # print "{}:{}".format(key, result) # show the recurse process
             return result
         else:
             return cache[key]
@@ -47,3 +56,4 @@ if __name__ == '__main__':
     import doctest
 
     doctest.testmod(verbose=True)
+    # Solution().climbStairs(100)
