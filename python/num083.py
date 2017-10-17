@@ -42,11 +42,12 @@ class Solution(object):
         1->2->3
         >>> print Solution().deleteDuplicates(Solution.construct_nodes("112235677"))
         1->2->3->5->6->7
+        >>> print Solution().deleteDuplicates(Solution.construct_nodes("1122356778"))
+        1->2->3->5->6->7->8
         """
         if not head:
             return []
-        r_head = head
-        current = r_head
+        current = head
         pointer = head.next
         while pointer:
             if pointer.val != current.val:
@@ -54,7 +55,7 @@ class Solution(object):
                 current = current.next
             pointer = pointer.next
         current.next = None
-        return r_head
+        return head
 
     # just for test
     @classmethod
