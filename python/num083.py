@@ -48,13 +48,11 @@ class Solution(object):
         if not head:
             return []
         current = head
-        pointer = head.next
-        while pointer:
-            if pointer.val != current.val:
-                current.next = pointer
+        while current and current.next:
+            if current.val == current.next.val:
+                current.next = current.next.next
+            else:
                 current = current.next
-            pointer = pointer.next
-        current.next = None
         return head
 
     # just for test
