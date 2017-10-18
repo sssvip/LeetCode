@@ -22,6 +22,7 @@
 | 070        | [Climbing Stairs][70]          | [num070.py](/python/num070.py)     | Dynamic-Programming      | Easy           | O(n)            | O(n)              | 29 ms    | 82.36%            |
 | 083        | [Remove Duplicates from Sorted List][83]          | [num083.py](/python/num083.py)     | Linked List      | Easy           | O(n)            | O(1)              | 46 ms    | 96.67%            |
 | 088        | [Merge Sorted Array][88]          | [num088.py](/python/num088.py)     | Array      | Easy           | O(n)            | O(1)              | 35 ms    | 93.77%            |
+| 100        | [Same Tree][100]          | [num100.py](/python/num100.py)     | Tree      | Easy           | O(n)            | O(1)              | 29 ms    | 93.98%            |
 
 
 
@@ -43,7 +44,7 @@
 [70]: https://leetcode.com/problems/climbing-stairs/description/
 [83]: https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
 [88]: https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
-
+[100]: https://leetcode.com/problems/same-tree/description/
 
 
 <!-- | 004        | [Median of Two Sorted Arrays][4]                    | [num004.py](/python/num004.py)     | Binary Search | Hard           | O(n)              | O(n)              | 92 ms    | 71.48%            |
