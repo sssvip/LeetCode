@@ -93,17 +93,17 @@ class Solution(object):
         root=TreeNode(nodes[0])
         pointer=1
         current_level_nodes=[root]
-        while pointer <=len(nodes)-1:
+        while pointer <len(nodes):
             next_level_nodes=[]
             for node in current_level_nodes:
                 node.left=TreeNode(nodes[pointer])
                 next_level_nodes.append(node.left)
                 pointer+=1
+                if pointer>=len(nodes):
+                    return root
                 node.right=TreeNode(nodes[pointer])
                 next_level_nodes.append(node.right)
                 pointer+=1
-                if pointer>=len(nodes)-1:
-                    return root
             current_level_nodes=next_level_nodes
         return root
 
