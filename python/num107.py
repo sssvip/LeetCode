@@ -1,15 +1,28 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Date    : 2017-10-21 12:34:23
+# @Date    : 2017-10-22 12:24:54
 # @Author  : David:admin@dxscx.com
 # @Link    : http://blog.dxscx.com
 # @Version : 1.0
 
 """
 
-Given a binary tree, find its maximum depth.
 
-The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).
+
+For example:
+Given binary tree [3,9,20,null,null,15,7],
+    3
+   / \
+  9  20
+    /  \
+   15   7
+return its bottom-up level order traversal as:
+[
+  [15,7],
+  [9,20],
+  [3]
+]
 
 """
 
@@ -21,28 +34,27 @@ class TreeNode(object):
         self.right = None
 
 class Solution(object):
-    def maxDepth(self, root):
+    def levelOrderBottom(self, root):
         """
         :type root: TreeNode
-        :rtype: int
-        >>> print Solution().maxDepth(Solution.construct_tree([1,2,3,4]))
-        3
-        >>> print Solution().maxDepth(Solution.construct_tree([1,2,3,4,4,4,4,4]))
-        4
+        :rtype: List[List[int]]
+        >>> Solution().levelOrderBottom(Solution.construct_tree([3,9,20,None,None,15,7]))
+        [[15, 7], [9, 20], [3]]
         """
         if not root:
-            return 0
-        return self.travel(root,1)
-
-    def travel(self,node,current_depth):
-        if not node:
-            return current_depth
-        result=current_depth
-        if node.left:
-            result=max(self.travel(node.left,current_depth+1),result)
-        if node.right:
-            result=max(self.travel(node.right,current_depth+1),result)
-        return result
+            return []
+        result=[]
+        current_level_nodes=[root]
+        while current_level_nodes:
+            next_level_nodes=[]
+            result.append([])
+            for x in current_level_nodes:
+                if x and x.val is not None:
+                    next_level_nodes.append(x.left)
+                    next_level_nodes.append(x.right)
+                    result[-1].append(x.val)
+            current_level_nodes=next_level_nodes
+        return result[len(result)-2::-1]
 
     # just for test
     @classmethod
@@ -67,6 +79,8 @@ class Solution(object):
         while pointer <len(nodes):
             next_level_nodes=[]
             for node in current_level_nodes:
+                if pointer>=len(nodes):
+                    return root
                 node.left=TreeNode(nodes[pointer])
                 next_level_nodes.append(node.left)
                 pointer+=1
@@ -98,7 +112,9 @@ class Solution(object):
         while not result[-1]:
             result.pop()
         return result
+        
+
 
 if __name__=='__main__':
     import doctest
-    doctest.testmod(verbose=True)    
+    doctest.testmod(verbose=True)
