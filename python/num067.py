@@ -1,5 +1,5 @@
-#!/usr/bin/env python  
-# encoding: utf-8  
+#!/usr/bin/env python
+# encoding: utf-8
 
 """ 
 @version: v1.0 
@@ -20,6 +20,7 @@ Return "100".
 
 
 class Solution(object):
+
     def addBinary(self, a, b):
         """
         :type a: str

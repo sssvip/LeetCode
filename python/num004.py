@@ -23,7 +23,9 @@ nums2 = [3, 4]
 The median is (2 + 3)/2 = 2.5
 """
 
+
 class Solution(object):
+
     def findMedianSortedArrays(self, nums1, nums2):
         """
         :type nums1: List[int]
@@ -50,49 +52,48 @@ class Solution(object):
             return self.deal_empty_array(nums2)
         if not nums2:
             return self.deal_empty_array(nums1)
-        m,n=len(nums1),len(nums2)
-        pre_num,after_num=0,0
-        even=(m+n)%2-1
-        #print "even"+str(even)
-        median_index=(m+n)/2+(m+n)%2-even
-        i,j=0,0
-        while i+j<=median_index:
-            i,j,pre_num,after_num=self.next_min(nums1,nums2,i,j)
-            if i+j>=median_index-2:
-                if even and pre_num!=after_num:
-                    return (pre_num+after_num)/2.0
+        m, n = len(nums1), len(nums2)
+        pre_num, after_num = 0, 0
+        even = (m + n) % 2 - 1
+        # print "even"+str(even)
+        median_index = (m + n) / 2 + (m + n) % 2 - even
+        i, j = 0, 0
+        while i + j <= median_index:
+            i, j, pre_num, after_num = self.next_min(nums1, nums2, i, j)
+            if i + j >= median_index - 2:
+                if even and pre_num != after_num:
+                    return (pre_num + after_num) / 2.0
                 else:
                     return pre_num
             # slide pointer·
             # pre_num,after_num=nums1[i],nums2[j]
 
-    def next_min(self,nums1,nums2,i,j):
-        current_min=max(nums1[i],nums2[j])
-        m,n=len(nums1),len(nums2)
-        if i>=m-1 and j>=n-1:
-            return i,j,current_min,current_min
-        if i>=m-1:
-            j+=1
-            return i,j,current_min,nums2[j]
-        if j>=n-1:
-            i+=1
-            return i,j,current_min,nums1[i]
-        if nums1[i+1]<=nums2[j+1]:
-            i+=1
+    def next_min(self, nums1, nums2, i, j):
+        current_min = max(nums1[i], nums2[j])
+        m, n = len(nums1), len(nums2)
+        if i >= m - 1 and j >= n - 1:
+            return i, j, current_min, current_min
+        if i >= m - 1:
+            j += 1
+            return i, j, current_min, nums2[j]
+        if j >= n - 1:
+            i += 1
+            return i, j, current_min, nums1[i]
+        if nums1[i + 1] <= nums2[j + 1]:
+            i += 1
         else:
-            j+=1
-        return i,j,current_min,min(nums1[i],nums2[j])
+            j += 1
+        return i, j, current_min, min(nums1[i], nums2[j])
 
-    def deal_empty_array(self,nums):
-        n=len(nums)
-        if n%2==0:
-            return (nums[n/2-1]+nums[n/2])/2.0
+    def deal_empty_array(self, nums):
+        n = len(nums)
+        if n % 2 == 0:
+            return (nums[n / 2 - 1] + nums[n / 2]) / 2.0
         else:
-            return nums[n/2]
-        
+            return nums[n / 2]
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     import doctest
     doctest.testmod(verbose=True)
-    #print Solution().next_min([1,2,3],[1,2],0,1)
+    # print Solution().next_min([1,2,3],[1,2],0,1)

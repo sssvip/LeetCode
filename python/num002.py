@@ -1,5 +1,5 @@
-#!/usr/bin/env python  
-# encoding: utf-8  
+#!/usr/bin/env python
+# encoding: utf-8
 
 """ 
 @version: v1.0 
@@ -21,12 +21,14 @@ Output: 7 -> 0 -> 8
 
 # Definition for singly-linked list.
 class ListNode(object):
+
     def __init__(self, x):
         self.val = x
         self.next = None
 
 
 class Solution(object):
+
     def addTwoNumbers(self, l1, l2):
         """
         :type l1: ListNode
@@ -37,7 +39,8 @@ class Solution(object):
         >>> Solution.get_num_str_from_node(Solution().addTwoNumbers(Solution.construct_nodes("123123"), Solution.construct_nodes("123123")))
         642642
         """
-        num1, num2 = self.get_num_str_from_node(l1), self.get_num_str_from_node(l2)
+        num1, num2 = self.get_num_str_from_node(
+            l1), self.get_num_str_from_node(l2)
         total = num1 + num2
         return self.construct_nodes(str(total)[::-1])
 

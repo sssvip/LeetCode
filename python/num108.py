@@ -11,13 +11,17 @@ Given an array where elements are sorted in ascending order, convert it to a hei
 
 """
 
+
 class TreeNode(object):
+
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
 
+
 class Solution(object):
+
     def sortedArrayToBST(self, nums):
         """
         :type nums: List[int]
@@ -31,35 +35,36 @@ class Solution(object):
         """
         if not nums:
             return None
-        mid=len(nums)/2
-        root=TreeNode(nums[mid])
-        root.left=self.sortedArrayToBST(nums[:mid])
-        root.right=self.sortedArrayToBST(nums[mid+1:])
+        mid = len(nums) / 2
+        root = TreeNode(nums[mid])
+        root.left = self.sortedArrayToBST(nums[:mid])
+        root.right = self.sortedArrayToBST(nums[mid + 1:])
         return root
-
 
     # just for test
     @classmethod
-    def tree_to_array(cls,root):
+    def tree_to_array(cls, root):
         if not root:
             return []
-        result=[]
-        result.append(root.val)        
-        current_level_nodes=[root]
+        result = []
+        result.append(root.val)
+        current_level_nodes = [root]
         while any(current_level_nodes):
-            next_level_nodes=[]
+            next_level_nodes = []
             for x in current_level_nodes:
                 next_level_nodes.append(None if x is None else x.left)
                 next_level_nodes.append(None if x is None else x.right)
-                result.append(None if x is None or x.left is None else x.left.val)
-                result.append(None if x is None or x.right is None else x.right.val)
-            current_level_nodes=next_level_nodes
+                result.append(
+                    None if x is None or x.left is None else x.left.val)
+                result.append(
+                    None if x is None or x.right is None else x.right.val)
+            current_level_nodes = next_level_nodes
         # remove None
         while not result[-1]:
             result.pop()
         return result
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     import doctest
     doctest.testmod(verbose=True)

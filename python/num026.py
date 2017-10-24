@@ -1,5 +1,5 @@
-#!/usr/bin/env python  
-# encoding: utf-8  
+#!/usr/bin/env python
+# encoding: utf-8
 
 """ 
 @version: v1.0 
@@ -22,6 +22,7 @@ Your function should return length = 2, with the first two elements of nums bein
 
 
 class Solution(object):
+
     def removeDuplicates(self, nums):
         """
         :type nums: List[int]

@@ -1,5 +1,5 @@
-#!/usr/bin/env python  
-# encoding: utf-8  
+#!/usr/bin/env python
+# encoding: utf-8
 
 """ 
 @version: v1.0 
@@ -23,6 +23,7 @@ Here are few examples.
 
 
 class Solution(object):
+
     def searchInsert(self, nums, target):
         """
         Time: O(n)

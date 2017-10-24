@@ -1,5 +1,5 @@
-#!/usr/bin/env python  
-# encoding: utf-8  
+#!/usr/bin/env python
+# encoding: utf-8
 
 """ 
 @version: v1.0 
@@ -19,6 +19,7 @@ The digits are stored such that the most significant digit is at the head of the
 
 
 class Solution(object):
+
     def plusOne(self, digits):
         """
         :type digits: List[int]

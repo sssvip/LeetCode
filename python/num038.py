@@ -1,5 +1,5 @@
-#!/usr/bin/env python  
-# encoding: utf-8  
+#!/usr/bin/env python
+# encoding: utf-8
 
 """ 
 @version: v1.0 
@@ -36,6 +36,7 @@ Output: "1211"
 
 
 class Solution(object):
+
     def countAndSay(self, n):
         """
         :type n: int

@@ -1,5 +1,5 @@
-#!/usr/bin/env python  
-# encoding: utf-8  
+#!/usr/bin/env python
+# encoding: utf-8
 
 """ 
 @version: v1.0 
@@ -23,6 +23,7 @@ Here are few examples.
 
 
 class Solution(object):
+
     def searchInsert(self, nums, target):
         """
         Time: O(log(n))
@@ -37,11 +38,11 @@ class Solution(object):
         """
         left, right = 0, len(nums) - 1
         while left <= right:
-            mid = (left + right) / 2;
+            mid = (left + right) / 2
             if nums[mid] == target:
-                return mid;
+                return mid
             elif nums[mid] < target:
-                left = mid + 1;
+                left = mid + 1
             else:
                 right = mid - 1
         return left

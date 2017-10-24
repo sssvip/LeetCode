@@ -10,7 +10,9 @@ Determine whether an integer is a palindrome. Do this without extra space.
 
 """
 
+
 class Solution(object):
+
     def isPalindrome(self, x):
         """
         :type x: int
@@ -20,10 +22,8 @@ class Solution(object):
         >>> Solution().isPalindrome(1233212)
         False
         """
-        #return x>=0 and x==int(str(x)[::-1])
-        return str(x)==str(x)[::-1]
-
-
+        # return x>=0 and x==int(str(x)[::-1])
+        return str(x) == str(x)[::-1]
 
     # def isPalindrome(self, x):
     #     """
@@ -41,9 +41,8 @@ class Solution(object):
     #         if x[index] !=x[len(x)-index-1]:
     #             return False
     #     return True
-        
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     import doctest
     doctest.testmod(verbose=True)

@@ -1,5 +1,5 @@
-#!/usr/bin/env python  
-# encoding: utf-8  
+#!/usr/bin/env python
+# encoding: utf-8
 
 """ 
 @version: v1.0 
@@ -17,6 +17,7 @@ Compute and return the square root of x.
 
 
 class Solution(object):
+
     def mySqrt(self, x):
         """
         :type x: int

@@ -23,16 +23,17 @@ Input: "cbbd"
 Output: "bb"
 """
 
+
 class Solution(object):
+
     def longestPalindrome(self, s):
         """
         :type s: str
         :rtype: str
         """
-        
 
 
-if __name__=='__main__' :
+if __name__ == '__main__':
     #import doctest
-    #doctest.testmod(verbose=True)
+    # doctest.testmod(verbose=True)
     Solution().longestPalindrome("121233243")

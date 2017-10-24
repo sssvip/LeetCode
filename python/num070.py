@@ -1,5 +1,5 @@
-#!/usr/bin/env python  
-# encoding: utf-8  
+#!/usr/bin/env python
+# encoding: utf-8
 
 """ 
 @version: v1.0 
@@ -19,6 +19,7 @@ Note: Given n will be a positive integer.
 
 
 class Solution(object):
+
     def climbStairs(self, n):
         """
         :type n: int

@@ -19,6 +19,7 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 
 
 class Solution(object):
+
     def lengthOfLongestSubstring(self, s):
         """
         :type s: str

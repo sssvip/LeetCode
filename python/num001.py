@@ -1,5 +1,5 @@
-#!/usr/bin/env python  
-# encoding: utf-8  
+#!/usr/bin/env python
+# encoding: utf-8
 
 """ 
 @version: v1.0 
@@ -12,6 +12,7 @@
 
 
 class Solution(object):
+
     def twoSum(self, nums, target):
         """
         :type nums: List[int]
