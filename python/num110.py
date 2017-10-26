@@ -45,7 +45,7 @@ class Solution(object):
             return self.error
         return 1 + max(left, right)
 
-        # just for test
+    # just for test
     @classmethod
     def construct_tree(cls, nodes_array):
         """

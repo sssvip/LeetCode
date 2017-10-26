@@ -28,6 +28,7 @@
 | 107        | [Binary Tree Level Order Traversal II][107]         | [num107.py](/python/num107.py)     | BFS                 | Easy           | O(n)              | O(n)              | 39 ms    | 98.69%            |
 | 108        | [Convert Sorted Array to Binary Search Tree][108]   | [num108.py](/python/num108.py)     | DFS                 | Easy           | O(n)              | O(1)              | 82 ms    | 94.01%            |
 | 110        | [Convert Sorted Array to Binary Search Tree][110]   | [num110.py](/python/num110.py)     | DFS                 | Easy           | O(n)              | O(1)              | 62 ms    | 94.65%            |
+| 111        | [Minimum Depth of Binary Tree][111]                 | [num111.py](/python/num111.py)     | BFS                 | Easy           | O(n)              | O(n)              | 49 ms    | 98.19%            |
 
 
 
@@ -55,6 +56,7 @@
 [107]: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/
 [110]: https://leetcode.com/problems/balanced-binary-tree/description/
+[111]: https://leetcode.com/problems/minimum-depth-of-binary-tree/description/
 
 <!-- | 004        | [Median of Two Sorted Arrays][4]                    | [num004.py](/python/num004.py)     | Binary Search | Hard           | O(n)              | O(n)              | 92 ms    | 71.48%            |
 -->
