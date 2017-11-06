@@ -29,6 +29,9 @@
 | 108        | [Convert Sorted Array to Binary Search Tree][108]   | [num108.py](/python/num108.py)     | DFS                 | Easy           | O(n)              | O(1)              | 82 ms    | 94.01%            |
 | 110        | [Convert Sorted Array to Binary Search Tree][110]   | [num110.py](/python/num110.py)     | DFS                 | Easy           | O(n)              | O(1)              | 62 ms    | 94.65%            |
 | 111        | [Minimum Depth of Binary Tree][111]                 | [num111.py](/python/num111.py)     | BFS                 | Easy           | O(n)              | O(n)              | 49 ms    | 98.19%            |
+| 268        | [Missing Number][268]                 | [num268.py](/python/num268.py)     | Array                 | Easy           | O(n)              | O(n)              | 45 ms    | 74.24%            |
+| 268_2        | [Missing Number][268]                 | [num268_2.py](/python/num268_2.py)     | Array                 | Easy           | O(n)              | O(1)              | 42 ms    | 84.06%            |
+| 268_3        | [Missing Number][268]                 | [num268_3.py](/python/num268_3.py)     | Array                 | Easy           | O(n)              | O(1)              | 39 ms    | 94.98%            |
 
 
 
@@ -57,6 +60,7 @@
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/
 [110]: https://leetcode.com/problems/balanced-binary-tree/description/
 [111]: https://leetcode.com/problems/minimum-depth-of-binary-tree/description/
+[268]: https://leetcode.com/problems/missing-number/description/
 
 <!-- | 004        | [Median of Two Sorted Arrays][4]                    | [num004.py](/python/num004.py)     | Binary Search | Hard           | O(n)              | O(n)              | 92 ms    | 71.48%            |
 -->
