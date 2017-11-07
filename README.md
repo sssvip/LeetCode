@@ -67,6 +67,8 @@
 [111]: https://leetcode.com/problems/minimum-depth-of-binary-tree/description/
 [118]: https://leetcode.com/problems/pascals-triangle/description/
 [119]: https://leetcode.com/problems/pascals-triangle-ii/description/
+[121]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+[122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 [268]: https://leetcode.com/problems/missing-number/description/
 
 <!-- | 004        | [Median of Two Sorted Arrays][4]                    | [num004.py](/python/num004.py)     | Binary Search | Hard           | O(n)              | O(n)              | 92 ms    | 71.48%            |
