@@ -32,6 +32,8 @@
 | 118        | [Pascal's Triangle][118]                 | [num118.py](/python/num118.py)     | Array                 | Easy           | O(n^2)              | O(n)              | 32 ms    | 75.98%            |
 | 118_2        | [Pascal's Triangle][118]                 | [num118_2.py](/python/num118_2.py)     | Array                 | Easy           | O(n^2)              | O(n)              | 32 ms    | 75.98%            |
 | 119        | [Pascal's Triangle II][119]                 | [num119.py](/python/num119.py)     | Array                 | Easy           | O(n^2)              | O(n)              | 26 ms    | 99.80%            |
+| 121        | [Best Time to Buy and Sell Stock][121]                 | [num121.py](/python/num121.py)     | Array                 | Easy           | O(n)              | O(1)              | 35 ms    | 95.08%            |
+| 122        | [Best Time to Buy and Sell Stock II][122]                 | [num122.py](/python/num122.py)     | Array                 | Easy           | O(n)              | O(1)              | 35 ms    | 91.48%            |
 | 268        | [Missing Number][268]                 | [num268.py](/python/num268.py)     | Array                 | Easy           | O(n)              | O(n)              | 45 ms    | 74.24%            |
 | 268_2        | [Missing Number][268]                 | [num268_2.py](/python/num268_2.py)     | Array                 | Easy           | O(n)              | O(1)              | 42 ms    | 84.06%            |
 | 268_3        | [Missing Number][268]                 | [num268_3.py](/python/num268_3.py)     | Array                 | Easy           | O(n)              | O(1)              | 39 ms    | 94.98%            |
