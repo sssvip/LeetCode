@@ -34,10 +34,12 @@
 | 119        | [Pascal's Triangle II][119]                 | [num119.py](/python/num119.py)     | Array                 | Easy           | O(n^2)              | O(n)              | 26 ms    | 99.80%            |
 | 121        | [Best Time to Buy and Sell Stock][121]                 | [num121.py](/python/num121.py)     | Array                 | Easy           | O(n)              | O(1)              | 35 ms    | 95.08%            |
 | 122        | [Best Time to Buy and Sell Stock II][122]                 | [num122.py](/python/num122.py)     | Array                 | Easy           | O(n)              | O(1)              | 35 ms    | 91.48%            |
+| 217        | [Contains Duplicate][217]                 | [num217.py](/python/num217.py)     | Array                 | Easy           | O(n)              | O(n)              | 46 ms    | 79.41%            |
+| 217_2        | [Contains Duplicate][217]                 | [num217_2.py](/python/num217_2.py)     | Array                 | Easy           | O(n)              | O(n)              | 45 ms    | 84.05%            |
 | 268        | [Missing Number][268]                 | [num268.py](/python/num268.py)     | Array                 | Easy           | O(n)              | O(n)              | 45 ms    | 74.24%            |
 | 268_2        | [Missing Number][268]                 | [num268_2.py](/python/num268_2.py)     | Array                 | Easy           | O(n)              | O(1)              | 42 ms    | 84.06%            |
 | 268_3        | [Missing Number][268]                 | [num268_3.py](/python/num268_3.py)     | Array                 | Easy           | O(n)              | O(1)              | 39 ms    | 94.98%            |
-| 561        | [Shortest Unsorted Continuous Subarray][561]                 | [num561.py](/python/num561.py)     | Array                 | Easy           | O(n)              | O(n)              | 108 ms    | 97.76%            |
+| 561        | [Shortest Unsorted Continuous Subarray][561]                 | [num561.py](/python/num561.py)     | Array                 | Easy           | O(nlog(n))              | O(n)              | 108 ms    | 97.76%            |
 | 581        | [Shortest Unsorted Continuous Subarray][581]                 | [num581.py](/python/num581.py)     | Array                 | Easy           | O(nlog(n))              | O(n)              | 82 ms    | 81.90%            |
 
 
@@ -71,6 +73,7 @@
 [119]: https://leetcode.com/problems/pascals-triangle-ii/description/
 [121]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+[217]: https://leetcode.com/problems/contains-duplicate/description/
 [268]: https://leetcode.com/problems/missing-number/description/
 [561]: https://leetcode.com/problems/array-partition-i/
 [581]: https://leetcode.com/problems/shortest-unsorted-continuous-subarray/description/

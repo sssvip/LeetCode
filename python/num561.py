@@ -33,8 +33,7 @@ class Solution(object):
         >>> print Solution().arrayPairSum([1, 2, 3, 4, 5, 6, 7, 8])
         16
         """
-        snums = sorted(nums)
-        return sum(snums[::2])
+        return sum(sorted(nums)[::2])
 
 
 if __name__ == '__main__':
