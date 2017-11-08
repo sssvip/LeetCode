@@ -37,7 +37,7 @@
 | 268        | [Missing Number][268]                 | [num268.py](/python/num268.py)     | Array                 | Easy           | O(n)              | O(n)              | 45 ms    | 74.24%            |
 | 268_2        | [Missing Number][268]                 | [num268_2.py](/python/num268_2.py)     | Array                 | Easy           | O(n)              | O(1)              | 42 ms    | 84.06%            |
 | 268_3        | [Missing Number][268]                 | [num268_3.py](/python/num268_3.py)     | Array                 | Easy           | O(n)              | O(1)              | 39 ms    | 94.98%            |
-| 581        | [Shortest Unsorted Continuous Subarray][581]                 | [num581.py](/python/num581.py)     | Array                 | Easy           | O(nlog(n))              | O(n)              | 85 ms    | 77.44%            |
+| 581        | [Shortest Unsorted Continuous Subarray][581]                 | [num581.py](/python/num581.py)     | Array                 | Easy           | O(nlog(n))              | O(n)              | 82 ms    | 81.90%            |
 
 
 
