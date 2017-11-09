@@ -36,11 +36,14 @@
 | 122        | [Best Time to Buy and Sell Stock II][122]                 | [num122.py](/python/num122.py)     | Array                 | Easy           | O(n)              | O(1)              | 35 ms    | 91.48%            |
 | 217        | [Contains Duplicate][217]                 | [num217.py](/python/num217.py)     | Array                 | Easy           | O(n)              | O(n)              | 46 ms    | 79.41%            |
 | 217_2        | [Contains Duplicate][217]                 | [num217_2.py](/python/num217_2.py)     | Array                 | Easy           | O(n)              | O(n)              | 45 ms    | 84.05%            |
+| 219        | [Contains Duplicate II][219]                 | [num219.py](/python/num219.py)     | Array                 | Easy           | O(n)              | O(n)              | 45 ms    | 84.81%            |
 | 268        | [Missing Number][268]                 | [num268.py](/python/num268.py)     | Array                 | Easy           | O(n)              | O(n)              | 45 ms    | 74.24%            |
 | 268_2        | [Missing Number][268]                 | [num268_2.py](/python/num268_2.py)     | Array                 | Easy           | O(n)              | O(1)              | 42 ms    | 84.06%            |
 | 268_3        | [Missing Number][268]                 | [num268_3.py](/python/num268_3.py)     | Array                 | Easy           | O(n)              | O(1)              | 39 ms    | 94.98%            |
 | 561        | [Shortest Unsorted Continuous Subarray][561]                 | [num561.py](/python/num561.py)     | Array                 | Easy           | O(nlog(n))              | O(n)              | 108 ms    | 97.76%            |
 | 581        | [Shortest Unsorted Continuous Subarray][581]                 | [num581.py](/python/num581.py)     | Array                 | Easy           | O(nlog(n))              | O(n)              | 82 ms    | 81.90%            |
+| 643        | [Maximum Average Subarray I][643]                 | [num643.py](/python/num643.py)     | Array                 | Easy           | O(n)              | O(1)              | 202 ms    | 85.21%            |
+| 665        | [Non-decreasing Array][665]                 | [num665.py](/python/num665.py)     | Array                 | Easy           | O(n)              | O(1)              | 52 ms    | 90.31%            |
 
 
 
@@ -74,9 +77,12 @@
 [121]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 [122]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 [217]: https://leetcode.com/problems/contains-duplicate/description/
+[219]: https://leetcode.com/problems/contains-duplicate-ii/description/
 [268]: https://leetcode.com/problems/missing-number/description/
 [561]: https://leetcode.com/problems/array-partition-i/
 [581]: https://leetcode.com/problems/shortest-unsorted-continuous-subarray/description/
+[643]: https://leetcode.com/problems/maximum-average-subarray-i/description/
+[665]: https://leetcode.com/problems/non-decreasing-array/description/
 
 <!-- | 004        | [Median of Two Sorted Arrays][4]                    | [num004.py](/python/num004.py)     | Binary Search | Hard           | O(n)              | O(n)              | 92 ms    | 71.48%            |
 -->
