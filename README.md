@@ -40,6 +40,7 @@
 | 268        | [Missing Number][268]                 | [num268.py](/python/num268.py)     | Array                 | Easy           | O(n)              | O(n)              | 45 ms    | 74.24%            |
 | 268_2        | [Missing Number][268]                 | [num268_2.py](/python/num268_2.py)     | Array                 | Easy           | O(n)              | O(1)              | 42 ms    | 84.06%            |
 | 268_3        | [Missing Number][268]                 | [num268_3.py](/python/num268_3.py)     | Array                 | Easy           | O(n)              | O(1)              | 39 ms    | 94.98%            |
+| 485        | [Max Consecutive Ones][485]                 | [num485.py](/python/num485.py)     | Array                 | Easy           | O(n)              | O(1)              | 69 ms    | 93.00%            |
 | 561        | [Shortest Unsorted Continuous Subarray][561]                 | [num561.py](/python/num561.py)     | Array                 | Easy           | O(nlog(n))              | O(n)              | 108 ms    | 97.76%            |
 | 581        | [Shortest Unsorted Continuous Subarray][581]                 | [num581.py](/python/num581.py)     | Array                 | Easy           | O(nlog(n))              | O(n)              | 82 ms    | 81.90%            |
 | 643        | [Maximum Average Subarray I][643]                 | [num643.py](/python/num643.py)     | Array                 | Easy           | O(n)              | O(1)              | 202 ms    | 85.21%            |
@@ -80,6 +81,7 @@
 [219]: https://leetcode.com/problems/contains-duplicate-ii/description/
 [268]: https://leetcode.com/problems/missing-number/description/
 [561]: https://leetcode.com/problems/array-partition-i/
+[485]: https://leetcode.com/problems/max-consecutive-ones/description/
 [581]: https://leetcode.com/problems/shortest-unsorted-continuous-subarray/description/
 [643]: https://leetcode.com/problems/maximum-average-subarray-i/description/
 [665]: https://leetcode.com/problems/non-decreasing-array/description/
